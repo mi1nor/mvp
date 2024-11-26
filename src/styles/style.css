@@ -39,27 +39,16 @@ body {
     justify-content: space-between;
 }
 
-.section__apartaments {
-    /* display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 30px; */
-
-    margin-top: 250px;
-}
-
-.section__apartaments h2 {
-    font-size: 3rem;
-    font-weight: 700;
-    text-align: left;
-    margin: 60px 0;
+.section__apartaments .section__container {
+    display: grid;
+    grid-template-columns: 314px 314px 242.5px 242.5px;
+    gap: 30px;
 }
 
 .apartaments__body__firstCard {
     width: 629px;
-    height: 280px;
-    border-radius: 50px;
-    background: url(../images/rent-1.png);
+    color: white;
+    background-image: url(../images/rent-1.png);
     object-fit: cover;
     vertical-align: middle;
     background-size: cover;
@@ -69,74 +58,12 @@ body {
 
 .apartaments__body__secondCard {
     width: 485px;
-    height: 280px;
-    border-radius: 50px;
-    background: url(../images/rent-2.png);
+    color: white;
+    background-image: url(../images/rent-2.png);
     object-fit: cover;
     vertical-align: middle;
     background-size: cover;
     background-position: 50% 50%;
     background-repeat: no-repeat;
-}
-
-.section__apartaments .apartaments__title {
-    margin: 0;
-    padding: 75px 0 55px 75px;
-    font-size: 1.5rem;
-    font-weight: 700;
-    color: white;
-    text-transform: uppercase;
-}
-
-.section__apartaments .apartaments__price {
-    margin: 0;
-    padding-left: 75px;
-    padding-bottom: 25px;
-    font-size: 1.25rem;
-    font-weight: 400;
-    color: white;
-}
-
-.section__apartaments .apartaments__address {
-    margin: 0;
-    margin-right: 95px;
-    display: inline-block;
-    font-size: 1.125rem;
-    color: white;
-}
-
-.section__apartaments .apartaments__image {
-    display: inline-block;
-    margin-left: 55px;
-    /* margin-right: 5px; */
-    width: 18px;
-    height: 18px;
-}
-
-.apartaments__price span {
-    font-weight: 700;
-}
-
-.apartaments__link {
-    width: 108.22px;
-    height: 38.39px;
-    padding: 10px;
-    font-weight: 700;
-    font-size: 0.875rem;
-    letter-spacing: 0px;
-    color: white;
-    text-transform: uppercase;
-    background-image: linear-gradient(to right, #2cccc4, #41807c);
-    text-decoration: none;
-    border-radius: 7.5px;
-}
-
-.apartaments__body__secondCard .apartaments__address {
-    margin-right: 10px;
-}
-
-.section__apartaments article {
-    display: flex;
-    justify-content: flex-start;
-    gap: 30px;
+    grid-column: 3/4;
 }
