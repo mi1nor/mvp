@@ -35,17 +35,24 @@ body {
 
 .section__info {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
 }
 
 .section__apartaments {
-    display: flex;
-    gap: 30px;
+    /* display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px; */
+
+    margin-top: 250px;
 }
 
 .section__apartaments h2 {
     font-size: 3rem;
     font-weight: 700;
+    text-align: left;
+    margin: 60px 0;
 }
 
 .apartaments__body__firstCard {
@@ -122,4 +129,14 @@ body {
     background-image: linear-gradient(to right, #2cccc4, #41807c);
     text-decoration: none;
     border-radius: 7.5px;
+}
+
+.apartaments__body__secondCard .apartaments__address {
+    margin-right: 10px;
+}
+
+.section__apartaments article {
+    display: flex;
+    justify-content: flex-start;
+    gap: 30px;
 }
