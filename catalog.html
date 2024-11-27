@@ -6,27 +6,30 @@
     <link rel="stylesheet" href="src/styles/style-catalog.css">
     <link rel="stylesheet" href="src/styles/adaptive.css">
     <title>Каталог</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header class="header">
         <header class="top">
             <img id="logo-ico" src="src/images/logo.png" alt="logo-ico">
             <div class="header-top-text">
-                <a href="#">Подать объявляние</a>
-                <a href="#">Войти</a>
+                <a class="header__link" href="#">Подать объявляние</a>
+                <a class="header__link" href="#">Войти</a>
             </div>
            
         </header>
         <header class="bottom">
-                <button>Фильтры</button>
-                <button>Посуточно</button>
-                <button>Квартиру</button>
-                <button>Комнатность</button>
-                <button>Цена</button>
+                <button class="header__link">Фильтры</button>
+                <button class="header__link">Посуточно</button>
+                <button class="header__link">Квартиру</button>
+                <button class="header__link">Комнатность</button>
+                <button class="header__link">Цена</button>
                 <div class="search">
                     <input type="text" placeholder="Город, жк, адрес, метро, район">
                 </div>
-                <button>Найти</button>
+                <button class="header__link">Найти</button>
         </header>
     </header>
     <main>
