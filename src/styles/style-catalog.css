@@ -40,15 +40,31 @@ header.bottom{
 }
 .announcement-images{
     display:grid;
-    grid-template-columns: repeat(3,0.25fr);
+    grid-template-columns: repeat(2,0.5fr);
     grid-template-rows: 1fr 0.25fr;
+    width: 45%;
+    gap:5px;
+}
+.announcement-images > img {
+    width:100%;
+    height:100%;
+    border-radius: 10px;
 }
 .flat1-1{
     grid-column:1/4;
     grid-row:1/2;
 }
 .flat1-2{
-    grid-column: ;
+    grid-column:1/2;
+    grid-row:2/3;
+}
+.flat1-3{
+    grid-column:2/3;
+    grid-row:2/3;
+}
+.announcement{
+    display:flex;
+    height:400px;
 }
 #logo-ico{
     width:71px;
