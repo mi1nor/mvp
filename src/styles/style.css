@@ -1,9 +1,11 @@
 body {
     margin: 0 auto;
     padding: 0;
+
+    font-family: "Ubuntu", serif;
     width: 60%;
     height: 100%;
-}
+
 ul{
     list-style-type: none;
     padding:0;
@@ -80,4 +82,67 @@ header.header > ul > li > a:hover{
 }
 #logo-ico{
     width:71px;
+}
+
+
+.info__card {
+    width: 274.250px;
+    height: 301px;
+    padding: 10px;
+    border: 4px solid black;
+    border-radius: 50px;
+    text-align: center;
+}
+
+.info__card img {
+    width: 113px;
+    height: 113px;
+    /* filter: brightness(0.3); */
+    margin: 28px auto 0 0;
+}
+
+.info__card p {
+    width: 254.50px;
+    height: 48px;
+    margin: 38px 0;
+    padding: 0;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.2;
+    text-align: center;
+}
+
+.section__info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.section__apartaments .section__container {
+    display: grid;
+    grid-template-columns: 314px 314px 242.5px 242.5px;
+    gap: 30px;
+}
+
+.apartaments__body__firstCard {
+    width: 629px;
+    color: white;
+    background-image: url(../images/rent-1.png);
+    object-fit: cover;
+    vertical-align: middle;
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+}
+
+.apartaments__body__secondCard {
+    width: 485px;
+    color: white;
+    background-image: url(../images/rent-2.png);
+    object-fit: cover;
+    vertical-align: middle;
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    grid-column: 3/4;
 }
