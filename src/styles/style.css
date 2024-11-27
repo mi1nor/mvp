@@ -124,6 +124,7 @@ header.header > ul > li > a:hover{
 }
 .section__apartaments{
     margin-top:200px;
+    margin-bottom: 200px;
 }
 .section__apartaments .section__container {
     display: grid;
@@ -131,10 +132,55 @@ header.header > ul > li > a:hover{
     grid-template-rows: 1fr 1fr;
     gap: 15px;
 }
+
+.apartaments__image {
+    width: 15px;
+    height: 15px;
+}
+
+.apartaments__link {
+    color: white;
+    background-color: #2ec4bc;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.apartaments__title {
+    font-size: 24px;
+    font-weight: 700;
+    padding-top: 25px;
+    padding-left: 75px;
+}
+
+.apartaments__address {
+    display: flex;
+    font-size: 18px;
+    font-weight: 400;
+    padding-left: 75px;
+}
+
+.link__wrapper {
+    padding-left: 40px;
+    padding-right: 20px;
+}
+
+.apartaments__price {
+    font-size: 20px;
+    font-weight: 400;
+    padding-left: 75px;
+}
+
+#fw-bold {
+    font-weight: 700;
+}
+
 .apartaments__body__firstCard,
 .apartaments__body__secondCard,
 .apartaments__body__thirdCard{
-    color: rgb(231, 10, 10);
+    color: white;
     object-fit: cover;
     vertical-align: middle;
     background-size: cover;
@@ -160,8 +206,9 @@ header.header > ul > li > a:hover{
     grid-column: 1/4;
 }
 footer {
-    background: #424242;
-    margin:50px 0px 0px 0px;
-
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:50px 0px 25px 0px;
     width:100%;
 }
