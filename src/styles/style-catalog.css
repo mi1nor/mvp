@@ -17,7 +17,39 @@ a{
     text-decoration: none;
     color:black;
 }
-.header{
+header.top{
     display:flex;
-    margin:20px auto;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+header.bottom{
+    display:flex;
+    gap:15px;
+    width:100%;
+}
+.search{
+    width:80%;
+}
+.search > input{
+    width:100%;
+}
+.header-top-text{
+    display:flex;
+    gap:30px;
+}
+.announcement-images{
+    display:grid;
+    grid-template-columns: repeat(3,0.25fr);
+    grid-template-rows: 1fr 0.25fr;
+}
+.flat1-1{
+    grid-column:1/4;
+    grid-row:1/2;
+}
+.flat1-2{
+    grid-column: ;
+}
+#logo-ico{
+    width:71px;
 }

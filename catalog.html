@@ -3,18 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/styles/style-catalog.css">
+    <link rel="stylesheet" href="src/styles/adaptive.css">
     <title>Каталог</title>
 </head>
 <body>
     <header class="header">
-        <ul class="header-ul">
-            <li><img id="logo-ico" src="src/images/logo.png" alt="logo-ico"></li>
-            <li><a href="#">Подать объявляние</a></li>
-            <li><a href="#">Войти</a></li>
-        </ul>
+        <header class="top">
+            <img id="logo-ico" src="src/images/logo.png" alt="logo-ico">
+            <div class="header-top-text">
+                <a href="#">Подать объявляние</a>
+                <a href="#">Войти</a>
+            </div>
+           
+        </header>
+        <header class="bottom">
+                <button>Фильтры</button>
+                <button>Посуточно</button>
+                <button>Квартиру</button>
+                <button>Комнатность</button>
+                <button>Цена</button>
+                <div class="search">
+                    <input type="text" placeholder="Город, жк, адрес, метро, район">
+                </div>
+                <button>Найти</button>
+        </header>
     </header>
     <main>
-        
+        <h1>Аренда квартир в Вологде на длительный срок</h1>
+        <p>Найдено 50 объявлений</p>
+        <div class="advertisements">
+            <div class="announcement">
+                <div class="announcement-images">
+                    <img class="flat1-1" src="src/images/flat1-1.jpg" alt="main-photo-flat">
+                    <img class="flat1-2" src="src/images/flat1-2.jpg" alt="alt-photo-flat">
+                    <img class="flat1-3" src="src/images/flat1-3.jpg" alt="alt-photo-flat">
+                </div>
+                <div class="announcement-text">
+                    <h2 class="announcement-text-title">1-комн. квартира, 43 м², 6/9 этаж</h2>
+                    <p class="announcement-text-place">Вологодская область, Вологда, мкр. 5-й, Технический переулок, 56А</p>
+                    <p class="announcement-text-price">50 000 Р/мес.</p>
+                    <p class="announcement-text-description">Новая квартира с дизайнерским ремонтом в спальном районе города. Полностью укомплектована всем необходимым: мебель и бытовая техника. Закрытая территория, детские площадки, видеонаблюдение.</p>
+                </div>
+            </div>
+        </div>
     </main>
     <footer>
 
