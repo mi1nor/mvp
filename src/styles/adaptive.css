@@ -30,9 +30,33 @@
 @media (max-width:848px) {
     .apartaments__title {
         padding: 0;
+        padding-left: 10px;
     }
     .apartaments__price {
         padding: 0;
+        padding-left: 10px;
+    }
+    .apartaments__address {
+        padding: 0;
+        padding-left: 10px;
+    }
+}
+
+@media (max-width:712px) {
+    .link__wrapper {
+        padding: 0;
+    }
+    .apartaments__address {
+        flex-direction: column;
+    }
+}
+
+@media (max-width:2600px) {
+    .link__wrapper {
+        padding: 0;
+    }
+    .apartaments__address {
+        flex-direction: column;
     }
 }
 @media (max-width:420px){
