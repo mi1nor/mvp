@@ -1,10 +1,89 @@
 body {
     margin: 0 auto;
     padding: 0;
+
+    font-family: "Ubuntu", serif;
     width: 60%;
     height: 100%;
-    font-family: "Ubuntu", serif;
 }
+ul{
+    list-style-type: none;
+    padding:0;
+}
+a{
+    text-decoration: none;
+    color:black;
+}
+.header{
+    display:flex;
+    margin:20px;
+}
+.bg-wall{
+    position: absolute;
+    width:43%;
+    height: 100vw;
+    right:0;
+    background-color: #41807c;
+    z-index:-1;
+}
+.header-ul-left,
+.header-ul-right{
+    display:flex;
+    gap:31px;
+    align-items: center;
+    width:50%;
+    
+}
+.header-ul-left{
+    justify-content: left;
+}
+.header-ul-right{
+    justify-content: right;
+}
+.header-ul-right > li > a{
+    color:white;
+}
+.main-section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.main-text > h1{
+    font-size: 48px;
+    font-weight: 700;
+}
+.main-text > p {
+    font-size:36px;
+    font-weight: 300;
+    width:65%;
+}
+.main-text{
+    margin-bottom: 50px;
+}
+.main-image{
+    max-width:574px;
+    border-radius: 10px;
+}
+.main-btn{
+    color:white;
+    background-color: aqua;
+    border-radius: 15px;
+    padding:20px 30px;
+    font-weight: bold;
+    border:0px;
+    margin-top:60px;
+}
+.main-btn:hover{
+    background-color: rgb(1, 164, 164);
+}
+header.header > ul > li > a:hover{
+    color:red;
+    text-decoration: underline;
+}
+#logo-ico{
+    width:71px;
+}
+
 
 .info__card {
     width: 274.250px;
