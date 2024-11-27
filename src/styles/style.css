@@ -16,6 +16,14 @@ a{
     display:flex;
     margin:20px;
 }
+.bg-wall{
+    position: absolute;
+    width:43%;
+    height: 100vw;
+    right:0;
+    background-color: #41807c;
+    z-index:-1;
+}
 .header-ul-left,
 .header-ul-right{
     display:flex;
@@ -29,6 +37,9 @@ a{
 }
 .header-ul-right{
     justify-content: right;
+}
+.header-ul-right > li > a{
+    color:white;
 }
 .main-section{
     display: flex;
@@ -63,7 +74,7 @@ a{
 .main-btn:hover{
     background-color: rgb(1, 164, 164);
 }
-a:hover{
+header.header > ul > li > a:hover{
     color:red;
     text-decoration: underline;
 }
