@@ -1,8 +1,9 @@
 body {
-    margin-top:15px;
     padding: 0;
     font-family: "Ubuntu", serif;
     height: 100%;
+    margin: 15px auto 0 auto;
+    max-width: 1920px;
 }
 main,
 header{
@@ -65,6 +66,7 @@ a{
 }
 .main-image{
     max-width:574px;
+    width:80%;
     border-radius: 10px;
 }
 .main-btn{

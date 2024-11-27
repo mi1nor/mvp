@@ -6,7 +6,27 @@
     }
 }
 
-
+@media (max-width:1160px){
+    .section__apartaments .section__container{
+        grid-template-rows: 250px 250px 250px;
+    }
+    .apartaments__body__firstCard{
+        grid-column: 1/4;
+        grid-row:1/2;
+    }
+    .apartaments__body__secondCard{
+        grid-column: 1/4;
+        grid-row:2/3;
+    }
+    .apartaments__body__thirdCard{
+        grid-column: 1/4;
+        grid-row:3/4;
+    }
+    .section__info{
+        justify-content: center;
+        gap: 15px;
+    }
+}
 @media (max-width:848px) {
     .apartaments__title {
         padding: 0;
@@ -14,4 +34,18 @@
     .apartaments__price {
         padding: 0;
     }
+}
+@media (max-width:420px){
+    .apartaments__address{
+        flex-direction: column;
+        margin: 0 auto;
+        text-align: center;
+        padding-left: 0;
+    }
+    .apartaments__body__firstCard,
+    .apartaments__body__secondCard,
+    .apartaments__body__thirdCard{
+        text-align: center;
+    }
+    
 }
