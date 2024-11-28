@@ -1,5 +1,7 @@
 body {
-    margin-top:15px;
+    max-width: 1920px;
+    /* margin-top:15px; */
+    margin: 15px auto 0 auto;
     padding: 0;
     font-family: "Ubuntu", serif;
     height: 100%;
@@ -17,13 +19,13 @@ a{
     text-decoration: none;
     color:black;
 }
-header.top{
+.top{
     display:flex;
     justify-content: space-between;
     align-items: center;
     width: 100%;
 }
-header.bottom{
+.bottom{
     display:flex;
     gap:15px;
     width:100%;
@@ -109,7 +111,7 @@ a {
 
 h1 {
     color: #41807c;
-    font-weight: 500;
+    font-weight: 700;
 }
 
 p {
@@ -127,7 +129,7 @@ p {
 
 .announcement-text-title {
     color: #41807c;
-    font-weight: 500;
+    font-weight: 700;
 }
 
 .announcement {
@@ -189,8 +191,16 @@ p {
     margin-left: 10px;
 }
 
-.menu li {
-    height: 35px;
+.li-account > a {
+    border: none;
+}
+
+.menu div {
+    margin-top: 15px;
+}
+
+.menu div a {
+    color: #41807c;
 }
 
 .menu {
@@ -214,7 +224,6 @@ p {
     background-color: white;
     border: 0.5px rgba(128, 128, 128, 0.358) solid;
     border-radius: 5px;
-    font-weight: 600;
     padding: 10px;
 }
 
@@ -271,4 +280,16 @@ p {
 
 .li-account {
     margin-bottom: 25px;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:50px 0px 50px 0px;
+    width:100%;
+}
+
+.custom-hr {
+    margin-top: 500px;
 }

@@ -12,36 +12,35 @@
 </head>
 <body>
     <header class="header">
-        <header class="top">
+        <div class="top">
             <img id="logo-ico" src="src/images/logo.png" alt="logo-ico">
             <div class="header-top-text">
                 <a class="header__link" href="#">Подать объявляние</a>
                 <a class="header__link" href="#">Войти</a>
             </div>
 
-            <ul class="menu">
-                <li class="li-account"><a class="menuItem hmb a-account" href="#"><img class="ico-account" src="./src/images/ico-account.svg" alt=""></a></li>
-                <li class="hmb__modified"><a class="menuItem hmb" href="#">Подать объявление</a></li>
+            <div class="menu">
+                <div class="li-account"><a class="menuItem hmb a-account" href="#"><img class="ico-account" src="./src/images/ico-account.svg" alt=""></a></div>
+                <div class="hmb__modified"><a class="menuItem hmb" href="#">Подать объявление</a></div>
                 
-                <li><a class="menuItem hmb" href="#">Фильтры</a></li>
-                <li><a class="menuItem hmb" href="#">Посуточно</a></li>
-                <li><a class="menuItem hmb" href="#">Квартиру</a></li>
-                <li><a class="menuItem hmb" href="#">Комнатность</a></li>
-                <li class="hmb__modified"><a class="menuItem hmb" href="#">Цена</a></li>
+                <div><a class="menuItem hmb" href="#">Фильтры</a></div>
+                <div><a class="menuItem hmb" href="#">Посуточно</a></div>
+                <div><a class="menuItem hmb" href="#">Квартиру</a></div>
+                <div><a class="menuItem hmb" href="#">Комнатность</a></div>
+                <div class="hmb__modified"><a class="menuItem hmb" href="#">Цена</a></div>
                 <div class="my-hr">line</div>
                 <div class="menuItem__wrapper">
                     <input class="menuItem__input" type="text" placeholder="Город, жк, адрес, метро, район">
                     <button class="reset-Button"><img src="./src/images/ico-search.svg" alt=""></button>
                 </div>
-              </ul>
+            </div>
               <button class="hamburger">
-                <!-- material icons https://material.io/resources/icons/ -->
-                <i class="menuIcon material-icons"><img src="./src/images/ico-menu.svg" alt=""></i>
-                <i class="closeIcon material-icons"><img src="./src/images/ico-close.svg" alt=""></i>
+                <img class="menuIcon" src="./src/images/ico-menu.svg" alt="">
+                <img class="closeIcon" src="./src/images/ico-close.svg" alt="">
               </button>
 
-        </header>
-        <header class="bottom">
+        </div>
+        <div class="bottom">
                 <button class="header__link">Фильтры</button>
                 <button class="header__link">Посуточно</button>
                 <button class="header__link">Квартиру</button>
@@ -51,7 +50,7 @@
                     <input type="text" placeholder="Город, жк, адрес, метро, район">
                 </div>
                 <button class="header__link">Найти</button>
-        </header>
+        </div>
     </header>
     <main>
         <h1>Аренда квартир в Вологде на длительный срок</h1>
@@ -72,9 +71,13 @@
             </div>
         </div>
     </main>
+    <hr class="custom-hr">
     <footer>
-
+        <ul>
+            <li>© ООО «MVP», 2024−2030</li>
+        </ul>
     </footer>
+    <hr>
     <script src="./src/scripts/script.js"></script>
 </body>
 </html>

@@ -1,20 +1,8 @@
-@media (max-width:1400px) {
+@media (max-width:1530px) {
     main,
     header {
     margin:0 auto;
     width: 95%;
-    }
-}
-
-@media (max-width:1540px) {
-    header, body {
-        width: 95%;
-    }
-    /* .announcement {
-        width: 100%;
-    } */
-    .announcement-text {
-        margin-left: 70px;
     }
 }
 
@@ -50,10 +38,19 @@
     .header__link {
         display: none;
     }
-    header .top {
-        justify-content: center;
+    .top {
+        justify-content: flex-start;
     }
     .hamburger {
         display: block;
+    }
+    .search {
+        display: none;
+    }
+}
+
+@media (max-width:568px){
+    .menu {
+        top: -93px;
     }
 }
