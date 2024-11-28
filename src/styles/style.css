@@ -60,6 +60,7 @@ a{
     font-size:36px;
     font-weight: 300;
     width:65%;
+    line-height: 1.2;
 }
 .main-text{
     margin-bottom: 50px;
@@ -71,12 +72,15 @@ a{
 }
 .main-btn{
     color:white;
-    background-color: aqua;
+    background: linear-gradient(90deg, rgba(45,203,195,1) 0%, rgba(65,131,127,1) 100%);
     border-radius: 15px;
     padding:20px 30px;
-    font-weight: bold;
+    font-weight: 700;
     border:0px;
     margin-top:60px;
+    text-transform: uppercase;
+    letter-spacing: 0px;
+    font-size: 14px;
 }
 .main-btn:hover{
     background-color: rgb(1, 164, 164);
@@ -142,7 +146,7 @@ header.header > ul > li > a:hover{
 
 .apartaments__link {
     color: white;
-    background-color: #2ec4bc;
+    background: linear-gradient(90deg, rgba(45,203,195,1) 0%, rgba(65,131,127,1) 100%);
     border-radius: 10px;
     padding: 10px;
     font-size: 14px;
