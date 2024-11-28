@@ -25,7 +25,36 @@
         <ul class="header-ul-right">
             <li><a href="#">MVP2024@gmail.com</a></li>
             <li><a href="#">+7 (800) 535-35-35</a></li>
-            <li><a href="#">Сделать заказ</a></li>
+            <!-- <li><a href="#">Сделать заказ</a></li> -->
+
+            <!-- Модальное окно для заказа -->
+            <div id="orderModal" class="modal">
+                <div class="modal__content">
+                    <div class="modal__wrapper">
+                        <span class="modal__close">&times;</span>
+                        <h2 class="modal__title">Сделать заказ</h2>
+                    </div>
+                    <form id="orderForm" class="modal__form">
+                        <label for="name" class="modal__label">Имя:</label>
+                        <input type="text" id="name" name="name" class="modal__input" required>
+                        
+                        <label for="email" class="modal__label">Email:</label>
+                        <input type="email" id="email" name="email" class="modal__input" required>
+                        
+                        <label for="phone" class="modal__label">Телефон:</label>
+                        <input type="tel" id="phone" name="phone" class="modal__input" required>
+                        
+                        <label for="message" class="modal__label">Сообщение:</label>
+                        <textarea id="message" name="message" class="modal__textarea"></textarea>
+                        
+                        <button type="submit" class="modal__button">Отправить заказ</button>
+                    </form>
+                </div>
+            </div>
+
+            <!-- Кнопка "Сделать заказ" -->
+            <li><a href="#" id="orderButton" class="header__order-button">Сделать заказ</a></li>
+
         </ul>
     </header>
     <main>
@@ -110,5 +139,6 @@
     </footer>
     <hr>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="./src/scripts/script-order.js"></script>
 </body>
 </html>
