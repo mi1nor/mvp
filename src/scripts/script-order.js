@@ -23,6 +23,6 @@ window.onclick = function(event) {
 // Обработка отправки формы
 document.getElementById("orderForm").onsubmit = function(event) {
     event.preventDefault(); // Отменяем стандартное поведение формы
-    alert("Заказ отправлен!"); // Здесь вы можете добавить логику отправки данных
+    alert("Заказ отправлен!");
     modal.style.display = "none"; // Закрываем модальное окно после отправки
 }
