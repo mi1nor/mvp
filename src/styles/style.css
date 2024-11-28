@@ -9,6 +9,7 @@ main,
 header{
     margin:0 auto;
     width: 60%;
+    justify-content: space-between;
 }
 ul{
     list-style-type: none;
@@ -24,19 +25,19 @@ a{
 }
 .bg-wall{
     position: absolute;
-    width:44%;
-    height: 92vw;
+    width: 48%;
+    height: 1245px;
+    top: 0;
     right:0;
     background-color: #41807c;
     z-index:-1;
+    position: absolute;
 }
 .header-ul-left,
 .header-ul-right{
     display:flex;
     gap:31px;
     align-items: center;
-    width:50%;
-    
 }
 .header-ul-left{
     justify-content: left;
@@ -59,7 +60,6 @@ a{
 .main-text > p {
     font-size:36px;
     font-weight: 300;
-    width:65%;
     line-height: 1.2;
 }
 .main-text{
@@ -69,6 +69,7 @@ a{
     max-width:574px;
     width:80%;
     border-radius: 10px;
+    min-height: 574px;
 }
 .main-btn{
     color:white;
@@ -127,6 +128,7 @@ header.header > ul > li > a:hover{
     flex-wrap: wrap;
     justify-content: space-between;
     margin-top:250px;
+    gap:15px;
 }
 .section__apartaments{
     margin-top:200px;
@@ -134,8 +136,8 @@ header.header > ul > li > a:hover{
 }
 .section__apartaments .section__container {
     display: grid;
-    grid-template-columns: 0.5fr 0.5fr 0.5fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 0.5fr 0.6fr 0.8fr;
+    grid-template-rows: 300px 250px;
     gap: 15px;
 }
 
@@ -153,7 +155,14 @@ header.header > ul > li > a:hover{
     text-transform: uppercase;
     font-weight: 700;
 }
-
+.apartaments__address-inner{
+    display:flex;
+    align-items: center;
+    gap:5px;
+}
+.apartaments__address-inner > p {
+    margin: 0;
+}
 .apartaments__title {
     font-size: 24px;
     font-weight: 700;
