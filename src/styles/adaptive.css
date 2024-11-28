@@ -13,6 +13,9 @@
     .bg-wall{
         height: 1250px;
     }
+    .hamburger {
+        display: block;
+    }
 }
 @media (max-width:1480px) {
     main,
@@ -140,10 +143,17 @@
         margin: 0 auto;
         text-align: center;
         padding-left: 0;
+        margin-left: 5px;
     }
     .apartaments__body__firstCard,
     .apartaments__body__secondCard,
     .apartaments__body__thirdCard{
         text-align: center;
+    }
+    .apartaments__image {
+        align-items: flex-end;
+        align-self: flex-start;
+        flex-direction: column;
+        margin-top: 6px;
     }
 }

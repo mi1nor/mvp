@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Главная страница</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="./src/styles/style.css">
     <link rel="stylesheet" href="./src/styles/adaptive.css">
 
@@ -21,40 +20,56 @@
             <li class="hide"><a href="#">Контакты</a></li>
             <li class="hide"><a href="#">О нас</a></li>
         </ul>
+            
         <ul class="header-ul-right">
             <li><a href="#">MVP2024@gmail.com</a></li>
             <li><a href="#">+7 (800) 535-35-35</a></li>
-            <!-- <li><a href="#">Сделать заказ</a></li> -->
-
-            <!-- Модальное окно для заказа -->
-            <div id="orderModal" class="modal">
-                <div class="modal__content">
-                    <div class="modal__wrapper">
-                        <span class="modal__close">&times;</span>
-                        <h2 class="modal__title">Сделать заказ</h2>
-                    </div>
-                    <form id="orderForm" class="modal__form">
-                        <label for="name" class="modal__label">Имя:</label>
-                        <input type="text" id="name" name="name" class="modal__input" required>
-                        
-                        <label for="email" class="modal__label">Email:</label>
-                        <input type="email" id="email" name="email" class="modal__input" required>
-                        
-                        <label for="phone" class="modal__label">Телефон:</label>
-                        <input type="tel" id="phone" name="phone" class="modal__input" required>
-                        
-                        <label for="message" class="modal__label">Сообщение:</label>
-                        <textarea id="message" name="message" class="modal__textarea"></textarea>
-                        
-                        <button type="submit" class="modal__button">Отправить заказ</button>
-                    </form>
-                </div>
-            </div>
-
-            <!-- Кнопка "Сделать заказ" -->
             <li><a href="#" id="orderButton" class="header__order-button">Сделать заказ</a></li>
-
         </ul>
+                    <!-- Модальное окно для заказа -->
+                    <div id="orderModal" class="modal">
+                        <div class="modal__content">
+                            <div class="modal__wrapper">
+                                <span class="modal__close">&times;</span>
+                                <h2 class="modal__title">Сделать заказ</h2>
+                            </div>
+                            <form id="orderForm" class="modal__form">
+                                <label for="name" class="modal__label">Имя:</label>
+                                <input type="text" id="name" name="name" class="modal__input" required>
+                                
+                                <label for="email" class="modal__label">Email:</label>
+                                <input type="email" id="email" name="email" class="modal__input" required>
+                                
+                                <label for="phone" class="modal__label">Телефон:</label>
+                                <input type="tel" id="phone" name="phone" class="modal__input" required>
+                                
+                                <label for="message" class="modal__label">Сообщение:</label>
+                                <textarea id="message" name="message" class="modal__textarea"></textarea>
+                                
+                                <button type="submit" class="modal__button">Отправить заказ</button>
+                            </form>
+                        </div>
+                    </div>
+
+                    <div class="menu">
+                        <div class="li-account"><a class="menuItem hmb a-account" href="#"><img class="ico-account" src="./src/images/ico-account.svg" alt=""></a></div>
+                        <div class="hmb__modified"><a class="menuItem hmb" href="#">Подать объявление</a></div>
+                        
+                        <div><a class="menuItem hmb" href="#">Фильтры</a></div>
+                        <div><a class="menuItem hmb" href="#">Посуточно</a></div>
+                        <div><a class="menuItem hmb" href="#">Квартиру</a></div>
+                        <div><a class="menuItem hmb" href="#">Комнатность</a></div>
+                        <div class="hmb__modified"><a class="menuItem hmb" href="#">Цена</a></div>
+                        <div class="my-hr">line</div>
+                        <div class="menuItem__wrapper">
+                            <input class="menuItem__input" type="text" placeholder="Город, жк, адрес, метро, район">
+                            <button class="reset-Button"><img src="./src/images/ico-search.svg" alt=""></button>
+                        </div>
+                    </div>
+                      <button class="hamburger">
+                        <img class="menuIcon" src="./src/images/ico-menu.svg" alt="">
+                        <img class="closeIcon" src="./src/images/ico-close.svg" alt="">
+                      </button>
     </header>
     <main>
         <section class="main-section">
@@ -65,7 +80,7 @@
             </header>
             <img class="main-image" src="src/images/main-image.png" alt="main-image">
         </section>
-        <section class="section__info">
+        <div class="section__info">
             <div class="info__card">
                 <img src="./src/images/card-1.png" alt="Картинка документов">
                 <p>Предоставляем отчётные документы</p>
@@ -82,14 +97,14 @@
                 <img src="./src/images/card-4.png" alt="Картинка документов">
                 <p>Предоставляем отчётные документы</p>
             </div>
-        </section>
+        </div>
         <hr>
         <section class="section__apartaments">
             <h2>Наши квартиры</h2>
             <div class="section__container">
                 <div class="apartaments__body__firstCard">
                     <p class="apartaments__title">Однокомнатная квартира</p>
-                    <p class="apartaments__price">Сутки: <span id="fw-bold">1500</span> руб.</p>
+                    <p class="apartaments__price">Сутки: <span class="fw-bold">1500</span> руб.</p>
                     <div class="apartaments__address">
                         <div class="apartaments__address-inner">
                             <img class="apartaments__image" src="./src/images/ico-gps.png" alt="Иконка GPS">
@@ -102,7 +117,7 @@
                 </div>
                 <div class="apartaments__body__secondCard">
                     <p class="apartaments__title">Однокомнатная квартира</p>
-                    <p class="apartaments__price">Сутки: <span id="fw-bold">1500</span> руб.</p>
+                    <p class="apartaments__price">Сутки: <span class="fw-bold">1500</span> руб.</p>
                     <div class="apartaments__address">
                         <div class="apartaments__address-inner">
                             <img class="apartaments__image" src="./src/images/ico-gps.png" alt="Иконка GPS">
@@ -115,7 +130,7 @@
                 </div>
                 <div class="apartaments__body__thirdCard">
                     <p class="apartaments__title">Трёхкомнатная квартира</p>
-                    <p class="apartaments__price">Сутки: <span id="fw-bold">6666</span> руб.</p>
+                    <p class="apartaments__price">Сутки: <span class="fw-bold">6666</span> руб.</p>
                     <div class="apartaments__address">
                         <div class="apartaments__address-inner">
                             <img class="apartaments__image" src="./src/images/ico-gps.png" alt="Иконка GPS">
@@ -133,11 +148,11 @@
     <hr>
     <footer>
         <ul>
-            <li>| Ultra Developers | IV & ANDREW! |</li>
+            <li>© ООО «MVP», 2024−2030</li>
         </ul>
     </footer>
     <hr>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <script src="./src/scripts/script-order.js"></script>
+    <script src="./src/scripts/script.js"></script>
 </body>
 </html>

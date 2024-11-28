@@ -82,12 +82,13 @@ a{
     text-transform: uppercase;
     letter-spacing: 0px;
     font-size: 14px;
+    transition: background-color 0.5s;
 }
 .main-btn:hover{
-    background-color: rgb(1, 164, 164);
+    background: linear-gradient(90deg, rgb(54, 125, 121) 0%, rgb(39, 136, 130) 100%);
 }
 header.header > ul > li > a:hover{
-    color:red;
+    color:#70dcd5;
     text-decoration: underline;
 }
 #logo-ico{
@@ -155,6 +156,11 @@ header.header > ul > li > a:hover{
     text-transform: uppercase;
     font-weight: 700;
 }
+
+.apartaments__link:hover {
+    background: linear-gradient(90deg, rgb(54, 125, 121) 0%, rgb(39, 136, 130) 100%);
+}
+
 .apartaments__address-inner{
     display:flex;
     align-items: center;
@@ -180,6 +186,7 @@ header.header > ul > li > a:hover{
 .link__wrapper {
     padding-left: 40px;
     padding-right: 20px;
+    margin-top: 25px;
 }
 
 .apartaments__price {
@@ -312,4 +319,147 @@ footer {
 .modal__close {
     order: 1;
     margin-bottom: 22px;
+}
+
+/* // */
+
+.hamburger {
+    display: none;
+    position: fixed;
+    z-index: 100;
+    top: 2rem;
+    right: 1rem;
+    padding: 4px;
+    border: none;
+    background: white;
+    cursor: pointer;
+    background-color: #41807c;
+    border-radius: 4px;
+}
+
+.hamburger:hover {
+    background-color: #366a66;
+}
+
+.closeIcon {
+    display: none;
+}
+
+.menu {
+    position: fixed;
+    transform: translateY(-100%);
+    transition: transform 0.2s;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 99;
+    background: white;
+    color: white;
+    list-style: none;
+    padding-top: 4rem;
+}
+
+.showMenu {
+    transform: translateY(0);
+}
+
+.hmb {
+    background-color: white;
+    border: 0.5px rgba(128, 128, 128, 0.358) solid;
+    border-radius: 5px;
+    font-weight: 600;
+    padding: 10px;
+    margin-left: 10px;
+}
+
+.li-account > a {
+    border: none;
+}
+
+.menu div {
+    margin-top: 15px;
+}
+
+.menu div a {
+    color: #41807c;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* .header__link {
+    color: #41807c;
+    background-color: white;
+    border: 0.5px rgba(128, 128, 128, 0.358) solid;
+    border-radius: 5px;
+    font-weight: 600;
+    padding: 10px;
+} */
+
+.menuItem__wrapper .menuItem__input {
+    width: 205px;
+    background-color: white;
+    border: 0.5px rgba(128, 128, 128, 0.358) solid;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.menuItem__wrapper {
+    display: flex;
+    gap: 5px;
+}
+
+.menuItem__wrapper img {
+    background-color: #41807c;
+    border-radius: 30px;
+    padding: 4px;
+}
+
+.menuItem__wrapper button {
+    border: none;
+    background-color: white;
+    padding: 4px;
+}
+
+.menuItem__wrapper button:hover {
+    border: none;
+    background-color: rgb(243, 243, 243);
+    border-radius: 30px;
+}
+
+/* .hmb__modified {
+    margin-bottom: 25px;
+} */
+
+.my-hr {
+    width: 100%;
+    height: 1px;
+    color: #41807c;;
+    background-color: #41807c;
+    font-size: 0;
+    border-radius: 30px;
+}
+
+.ico-account {
+    background-color: #41807c;
+    border-radius: 30px;
+    margin: 0;
+    padding: 4px;
+}
+
+.a-account {
+    display: flex;
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.li-account {
+    margin-bottom: 25px;
 }
