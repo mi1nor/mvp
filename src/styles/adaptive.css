@@ -154,12 +154,12 @@
         align-items: flex-end;
         align-self: flex-start;
         flex-direction: column;
-        margin-top: 4px;
+        margin-top: 3px;
     }
 }
 
 @media (max-width:568px){
     .menu {
-        top: -93px;
+        top: -85px;
     }
 }

@@ -83,7 +83,8 @@ a{
     text-transform: uppercase;
     letter-spacing: 0px;
     font-size: 14px;
-    transition: background-color 0.5s;
+    margin:20px 0;
+
 }
 .main-btn:hover{
     background: linear-gradient(90deg, rgb(54, 125, 121) 0%, rgb(39, 136, 130) 100%);
@@ -468,4 +469,8 @@ footer {
 
 .li-account {
     margin-bottom: 25px;
+}
+
+.main-text p {
+    margin-bottom: 150px;
 }
