@@ -1,14 +1,59 @@
-@media (max-width:1400px) {
+@media (max-width:1830px){
+    .section__info{
+        justify-content: center;
+    }
+}
+@media (max-width:1677px){
+    .header-ul-right{
+        display:none
+    }
+    .hide{
+        display:none;
+    }
+    .bg-wall{
+        height: 1250px;
+    }
+}
+@media (max-width:1480px) {
     main,
     header {
     margin:0 auto;
-    width: 95%;
+    width: 75%;
+    }
+    /* .bg-wall{
+        width:46%;
+    } */
+    .main-section{
+        gap:13px;
     }
 }
-
-@media (max-width:1160px){
+@media (max-width:1350px){
+    .main-section{
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        
+    }
+    .main-text > p{
+        width: 100%;
+    }
+    .main-image{
+        max-height: 574px;
+        max-width:100%;
+        border:20px solid #41807c;
+        border-radius: 25px;
+    }
+    .bg-wall{
+        display: none;
+    }
+    main,header{
+        width: 80%;
+    }
+}
+@media (max-width:1190px){
     .section__apartaments .section__container{
-        grid-template-rows: 250px 250px 250px;
+        grid-template-rows: 300px 300px 300px; 
     }
     .apartaments__body__firstCard{
         grid-column: 1/4;
@@ -40,6 +85,12 @@
         padding: 0;
         padding-left: 10px;
     }
+    main,header{
+        width: 95%;
+    }
+    .main-image{
+        min-height: auto;
+    }
 }
 
 @media (max-width:712px) {
@@ -59,8 +110,31 @@
         flex-direction: column;
     }
 }
-
+@media(max-width:540px){
+    .main-image{
+        display: none;
+    }
+    .main-section{
+        margin-top:175px;
+        margin-bottom:50px;
+    }
+    main,header{
+        width: 98%;
+    }
+    .main-text{
+        margin-bottom: 130px;
+    }
+    .main-text > h1{
+        font-size:36px;
+    }
+    .main-text > p{
+        font-size:24px;
+    } 
+}
 @media (max-width:420px){
+    .apartaments__address-inner{
+        gap:0;
+    }
     .apartaments__address{
         flex-direction: column;
         margin: 0 auto;

@@ -14,13 +14,12 @@
 </head>
 <body>
     <header class="header">
-        
         <ul class="header-ul-left">
             <li><img id="logo-ico" src="src/images/logo.png" alt="logo-ico"></li>
-            <li><a href="#">Главная</a></li>
-            <li><a href="#">Недвижимость</a></li>
-            <li><a href="#">Контакты</a></li>
-            <li><a href="#">О нас</a></li>
+            <li class="hide"><a href="#">Главная</a></li>
+            <li class="hide"><a href="#">Недвижимость</a></li>
+            <li class="hide"><a href="#">Контакты</a></li>
+            <li class="hide"><a href="#">О нас</a></li>
         </ul>
         <ul class="header-ul-right">
             <li><a href="#">MVP2024@gmail.com</a></li>
@@ -30,7 +29,6 @@
     </header>
     <main>
         <section class="main-section">
-            <div class="bg-wall"></div>
             <header class="main-text">
                 <h1>Аренда недвижимости в Вологде</h1>
                 <p>На длительной срок или посуточно</p>
@@ -64,10 +62,10 @@
                     <p class="apartaments__title">Однокомнатная квартира</p>
                     <p class="apartaments__price">Сутки: <span id="fw-bold">1500</span> руб.</p>
                     <div class="apartaments__address">
-                        <div>
+                        <div class="apartaments__address-inner">
                             <img class="apartaments__image" src="./src/images/ico-gps.png" alt="Иконка GPS">
+                            <p>Вологда, ул. Судоремонтная 48а</p>
                         </div>
-                        <p>Вологда, ул. Судоремонтная 48а</p>
                         <div class="link__wrapper">
                             <a class="apartaments__link" href="#">Подробнее</a>
                         </div>
@@ -77,10 +75,10 @@
                     <p class="apartaments__title">Однокомнатная квартира</p>
                     <p class="apartaments__price">Сутки: <span id="fw-bold">1500</span> руб.</p>
                     <div class="apartaments__address">
-                        <div>
+                        <div class="apartaments__address-inner">
                             <img class="apartaments__image" src="./src/images/ico-gps.png" alt="Иконка GPS">
+                            <p>Вологда, ул. Судоремонтная 48а</p>
                         </div>
-                        <p>Вологда, ул. Судоремонтная 48а</p>
                         <div class="link__wrapper">
                             <a class="apartaments__link" href="#">Подробнее</a>
                         </div>
@@ -90,10 +88,10 @@
                     <p class="apartaments__title">Трёхкомнатная квартира</p>
                     <p class="apartaments__price">Сутки: <span id="fw-bold">6666</span> руб.</p>
                     <div class="apartaments__address">
-                        <div>
+                        <div class="apartaments__address-inner">
                             <img class="apartaments__image" src="./src/images/ico-gps.png" alt="Иконка GPS">
+                            <p>Вологда, ул. Судоремонтная 48а</p>
                         </div>
-                        <p>Вологда, ул. Судоремонтная 48а</p>
                         <div class="link__wrapper">
                             <a class="apartaments__link" href="#">Подробнее</a>
                         </div>
@@ -101,6 +99,7 @@
                 </div>
             </div>
         </section>
+        <div class="bg-wall"></div>
     </main>
     <hr>
     <footer>
