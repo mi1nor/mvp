@@ -19,7 +19,7 @@
 }
 
 @media (max-width:690px) {
-    input {
+    .search {
         display: none;
     }
 }
@@ -47,10 +47,13 @@
 }
 
 @media (max-width:610px) {
-    button, a {
+    .header__link {
         display: none;
     }
     header .top {
         justify-content: center;
+    }
+    .hamburger {
+        display: block;
     }
 }

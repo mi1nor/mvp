@@ -60,6 +60,7 @@ a{
 .main-text > p {
     font-size:36px;
     font-weight: 300;
+    line-height: 1.2;
 }
 .main-text{
     margin-bottom: 50px;
@@ -72,12 +73,15 @@ a{
 }
 .main-btn{
     color:white;
-    background-color: aqua;
+    background: linear-gradient(90deg, rgba(45,203,195,1) 0%, rgba(65,131,127,1) 100%);
     border-radius: 15px;
     padding:20px 30px;
-    font-weight: bold;
+    font-weight: 700;
     border:0px;
     margin-top:60px;
+    text-transform: uppercase;
+    letter-spacing: 0px;
+    font-size: 14px;
 }
 .main-btn:hover{
     background-color: rgb(1, 164, 164);
@@ -144,7 +148,7 @@ header.header > ul > li > a:hover{
 
 .apartaments__link {
     color: white;
-    background-color: #2ec4bc;
+    background: linear-gradient(90deg, rgba(45,203,195,1) 0%, rgba(65,131,127,1) 100%);
     border-radius: 10px;
     padding: 10px;
     font-size: 14px;
@@ -201,7 +205,7 @@ header.header > ul > li > a:hover{
     font-weight: 700;
 }
 .apartaments__body__firstCard {
-    background-image: url(../images/rent-1.png);
+    background-image: url(../images/rent-1.jpg);
     grid-column: 1/3;
     grid-row: 1/2;
 }
@@ -212,7 +216,7 @@ header.header > ul > li > a:hover{
     grid-row: 1/2;
 }
 .apartaments__body__thirdCard{
-    background-image: url(../images/rent-1.png);
+    background-image: url(../images/rent-1.jpg);
     grid-row:2/3;
     grid-column: 1/4;
 }
@@ -222,4 +226,90 @@ footer {
     align-items: center;
     margin:50px 0px 25px 0px;
     width:100%;
+}
+
+/* // */
+
+.modal {
+    display: none; 
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal__content {
+    max-width: 500px;
+    border-radius: 15px;
+    background-color: #fefefe;
+    margin: 15% auto; 
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; 
+}
+
+.modal__close {
+    color: #41807c;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.modal__close:hover,
+.modal__close:focus {
+    color: #203f3d;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal__title {
+    color: #41807c;
+    margin-bottom: 20px; 
+}
+
+.modal__form {
+    display: flex;
+    flex-direction: column; 
+    font-weight: 500;
+}
+
+.modal__label {
+    margin-top: 10px;
+}
+
+.modal__input,
+.modal__textarea {
+    margin-bottom: 10px;
+    background-color: white;
+    border: 0.5px rgba(128, 128, 128, 0.358) solid;
+    border-radius: 5px;
+    font-weight: 400;
+    padding: 10px;
+}
+
+.modal__button {
+    color: #41807c;
+    background-color: white;
+    border: 0.5px rgba(128, 128, 128, 0.358) solid;
+    border-radius: 5px;
+    font-weight: 600;
+    padding: 10px;
+}
+
+.modal__button:hover {
+    background-color: rgb(242, 242, 242);
+}
+
+.modal__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.modal__close {
+    order: 1;
+    margin-bottom: 22px;
 }

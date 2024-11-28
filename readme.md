@@ -1,4 +1,6 @@
-Цвет кнопок - linear-gradient(to right, #2cccc4, #41807c)
+Цвет кнопок - 
+background: rgb(45,203,195);
+background: linear-gradient(90deg, rgba(45,203,195,1) 0%, rgba(65,131,127,1) 100%);
 <hr>
 Цвет первой секции - #41807c
 <hr>
