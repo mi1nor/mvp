@@ -13,11 +13,36 @@
 <body>
     <header class="header">
         <div class="top">
-            <img id="logo-ico" src="src/images/logo.png" alt="logo-ico">
+            <a href="./index.html"><img id="logo-ico" src="src/images/logo.png" alt="logo-ico"></a>
             <div class="header-top-text">
                 <a class="header__link" href="#">Подать объявляние</a>
                 <a class="header__link" href="#">Войти</a>
             </div>
+
+                                <!-- Модальное окно для заказа -->
+                                <div id="orderModal" class="modal">
+                                    <div class="modal__content">
+                                        <div class="modal__wrapper">
+                                            <span class="modal__close">&times;</span>
+                                            <h2 class="modal__title">Сделать заказ</h2>
+                                        </div>
+                                        <form id="orderForm" class="modal__form">
+                                            <label for="name" class="modal__label">Имя:</label>
+                                            <input type="text" id="name" name="name" class="modal__input" required>
+                                            
+                                            <label for="email" class="modal__label">Email:</label>
+                                            <input type="email" id="email" name="email" class="modal__input" required>
+                                            
+                                            <label for="phone" class="modal__label">Телефон:</label>
+                                            <input type="tel" id="phone" name="phone" class="modal__input" required>
+                                            
+                                            <label for="message" class="modal__label">Сообщение:</label>
+                                            <textarea id="message" name="message" class="modal__textarea"></textarea>
+                                            
+                                            <button type="submit" class="modal__button">Отправить заказ</button>
+                                        </form>
+                                    </div>
+                                </div>
 
             <div class="menu">
                 <div class="li-account"><a class="menuItem hmb a-account" href="#"><img class="ico-account" src="./src/images/ico-account.svg" alt=""></a></div>
@@ -67,6 +92,7 @@
                     <p class="announcement-text-place">Вологодская область, Вологда, мкр. 5-й, Технический переулок, 56А</p>
                     <p class="announcement-text-price">50 000 Р/мес.</p>
                     <p class="announcement-text-description">Новая квартира с дизайнерским ремонтом в спальном районе города. Полностью укомплектована всем необходимым: мебель и бытовая техника. Закрытая территория, детские площадки, видеонаблюдение.</p>
+                    <button id="orderButton" class="announcement__link" onclick="makeOrder()">Забронировать</button>
                 </div>
             </div>
         </div>
@@ -82,6 +108,7 @@
                     <p class="announcement-text-place">Вологодская область, Вологда, мкр. 5-й, Золотой переулок, 21А</p>
                     <p class="announcement-text-price">150 000 Р/сут.</p>
                     <p class="announcement-text-description">Сочетание элегантной классики и эпатажного арт-деко. Закрытая территория, детские площадки, видеонаблюдение.</p>
+                    <button id="orderButton" class="announcement__link" onclick="makeOrder()">Забронировать</button>
                 </div>
             </div>
         </div>
@@ -97,6 +124,7 @@
                     <p class="announcement-text-place">Вологодская область, Вологда, мкр. 5-й, Золотой переулок, 21А</p>
                     <p class="announcement-text-price">75 000 Р/мес.</p>
                     <p class="announcement-text-description">Сочетание элегантной классики и эпатажного арт-деко. Закрытая территория, детские площадки, видеонаблюдение.</p>
+                    <button id="orderButton" class="announcement__link" onclick="makeOrder()">Забронировать</button>
                 </div>
             </div>
         </div>
@@ -112,6 +140,7 @@
                     <p class="announcement-text-place">Вологодская область, Вологда, мкр. 5-й, Золотой переулок, 21А</p>
                     <p class="announcement-text-price">5 000 Р/сутс.</p>
                     <p class="announcement-text-description">Сочетание элегантной классики и эпатажного арт-деко. Закрытая территория, детские площадки, видеонаблюдение.</p>
+                    <button id="orderButton" class="announcement__link" onclick="makeOrder()">Забронировать</button>
                 </div>
             </div>
         </div>
@@ -127,6 +156,7 @@
                     <p class="announcement-text-place">Вологодская область, Вологда, мкр. 5-й, Золотой переулок, 21А</p>
                     <p class="announcement-text-price">25 000 Р/мес.</p>
                     <p class="announcement-text-description">Сочетание элегантной классики и эпатажного арт-деко. Закрытая территория, детские площадки, видеонаблюдение.</p>
+                    <button id="orderButton" class="announcement__link" onclick="makeOrder()">Забронировать</button>
                 </div>
             </div>
         </div>
@@ -142,6 +172,7 @@
                     <p class="announcement-text-place">Вологодская область, Вологда, мкр. 5-й, Золотой переулок, 21А</p>
                     <p class="announcement-text-price">2 000 Р/сут.</p>
                     <p class="announcement-text-description">Сочетание элегантной классики и эпатажного арт-деко. Закрытая территория, детские площадки, видеонаблюдение.</p>
+                    <button id="orderButton" class="announcement__link" onclick="makeOrder()">Забронировать</button>
                 </div>
             </div>
         </div>
@@ -157,6 +188,7 @@
                     <p class="announcement-text-place">Вологодская область, Вологда, мкр. 5-й, Золотой переулок, 21А</p>
                     <p class="announcement-text-price">40 335 Р/мес.</p>
                     <p class="announcement-text-description">Сочетание элегантной классики и эпатажного арт-деко. Закрытая территория, детские площадки, видеонаблюдение.</p>
+                    <button id="orderButton" class="announcement__link" onclick="makeOrder()">Забронировать</button>
                 </div>
             </div>
         </div>
@@ -164,10 +196,13 @@
     <hr class="custom-hr">
     <footer>
         <ul>
-            <li>© ООО «MVP», 2024−2030</li>
+            <li><i>© ООО «MVP», 2024−2030</i></li>
+            <li><i>Номер телефона: 89814303622</i></li>
+            <li><i>Почта: analick20045@gmail.com</i></li>
         </ul>
     </footer>
     <hr>
+    <script src="./src/scripts/script-order.js"></script>
     <script src="./src/scripts/script.js"></script>
 </body>
 </html>

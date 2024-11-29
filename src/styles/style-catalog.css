@@ -76,7 +76,7 @@ a{
     width:71px;
 }
 
-.header__link {
+.header__link, .announcement__link {
     color: #41807c;
     background-color: white;
     border: 0.5px rgba(128, 128, 128, 0.358) solid;
@@ -296,4 +296,95 @@ footer {
 
 .advertisements {
     margin-bottom: 25px;
+}
+
+header .top a:hover {
+    background-color: white;
+    background: white;
+}
+
+/* // */
+
+.modal {
+    display: none; 
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal__content {
+    max-width: 500px;
+    border-radius: 15px;
+    background-color: #fefefe;
+    margin: 15% auto; 
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; 
+}
+
+.modal__close {
+    color: #41807c;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.modal__close:hover,
+.modal__close:focus {
+    color: #203f3d;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal__title {
+    color: #41807c;
+    margin-bottom: 20px; 
+}
+
+.modal__form {
+    display: flex;
+    flex-direction: column; 
+    font-weight: 500;
+}
+
+.modal__label {
+    margin-top: 10px;
+}
+
+.modal__input,
+.modal__textarea {
+    margin-bottom: 10px;
+    background-color: white;
+    border: 0.5px rgba(128, 128, 128, 0.358) solid;
+    border-radius: 5px;
+    font-weight: 400;
+    padding: 10px;
+}
+
+.modal__button {
+    color: #41807c;
+    background-color: white;
+    border: 0.5px rgba(128, 128, 128, 0.358) solid;
+    border-radius: 5px;
+    font-weight: 600;
+    padding: 10px;
+}
+
+.modal__button:hover {
+    background-color: rgb(242, 242, 242);
+}
+
+.modal__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.modal__close {
+    order: 1;
+    margin-bottom: 22px;
 }

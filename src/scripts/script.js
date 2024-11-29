@@ -5,6 +5,7 @@ const closeIcon= document.querySelector(".closeIcon");
 const menuIcon = document.querySelector(".menuIcon");
 const orderModal = document.querySelector(".modal");
 
+// Бургер-меню
 function toggleMenu() {
   if (menu.classList.contains("showMenu")) {
     menu.classList.remove("showMenu");
@@ -18,8 +19,18 @@ function toggleMenu() {
   }
 }
 
+// Скрытие бургер-меню и открытие модального окна
 function makeOrder() {
   orderModal.style.display = 'block';
+  if (menu.classList.contains("showMenu")) {
+    menu.classList.remove("showMenu");
+    closeIcon.style.display = "none";
+    menuIcon.style.display = "block";
+  }
+}
+
+// Скрытие бургер-меню и переход к блоку "О компании"
+function goInfoCompany() {
   if (menu.classList.contains("showMenu")) {
     menu.classList.remove("showMenu");
     closeIcon.style.display = "none";

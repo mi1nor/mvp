@@ -14,11 +14,11 @@
 <body>
     <header class="header">
         <ul class="header-ul-left">
-            <li><img id="logo-ico" src="src/images/logo.png" alt="logo-ico"></li>
+            <li><a href="#"><img id="logo-ico" src="src/images/logo.png" alt="logo-ico"></a></li>
             <li class="hide"><a href="#">Главная</a></li>
-            <li class="hide"><a href="#">Недвижимость</a></li>
+            <li class="hide"><a href="./catalog.html">Недвижимость</a></li>
             <li class="hide"><a href="#">Контакты</a></li>
-            <li class="hide"><a href="#">О нас</a></li>
+            <li class="hide"><a href="#goInfoCompany">О нас</a></li>
         </ul>
             
         <ul class="header-ul-right">
@@ -57,7 +57,7 @@
                         <div><a class="menuItem hmb" href="#">Главная</a></div>
                         <div><a class="menuItem hmb" href="#">Недвижимость</a></div>
                         <div><a class="menuItem hmb" href="#">Контакты</a></div>
-                        <div><a class="menuItem hmb" href="#">О нас</a></div>
+                        <div><a class="menuItem hmb" href="#goInfoCompany" onclick="goInfoCompany()">О нас</a></div>
                         <div><a class="menuItem hmb" href="#" onclick="makeOrder()">Сделать заказ</a></div>
                         <div class="my-hr">line</div>
                         <div class="menuItem__wrapper">
@@ -110,7 +110,7 @@
                             <p>Вологда, ул. Судоремонтная 48а</p>
                         </div>
                         <div class="link__wrapper">
-                            <a class="apartaments__link" href="#">Подробнее</a>
+                            <a class="apartaments__link" href="./catalog.html">Подробнее</a>
                         </div>
                     </div>
                 </div>
@@ -123,7 +123,7 @@
                             <p>Вологда, ул. Судоремонтная 48а</p>
                         </div>
                         <div class="link__wrapper">
-                            <a class="apartaments__link" href="#">Подробнее</a>
+                            <a class="apartaments__link" href="./catalog.html">Подробнее</a>
                         </div>
                     </div>
                 </div>
@@ -136,14 +136,14 @@
                             <p>Вологда, ул. Судоремонтная 48а</p>
                         </div>
                         <div class="link__wrapper">
-                            <a class="apartaments__link" href="#">Подробнее</a>
+                            <a class="apartaments__link" href="./catalog.html">Подробнее</a>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
         <div class="bg-wall"></div>
-        <section class="section__infoCompany">
+        <section id="goInfoCompany" class="section__infoCompany">
             <h2 class="infoCompany__title">Чем компания занимается?</h2>
             <p class="infoCompany__text">Наша компания специализируется на продаже и аренде недвижимости. 
                 Мы предлагаем широкий ассортимент объектов, включая квартиры, дома, коммерческие помещения и земельные участки. 
@@ -159,7 +159,9 @@
     <hr class="custom-hr">
     <footer>
         <ul>
-            <li>© ООО «MVP», 2024−2030</li>
+            <li><i>© ООО «MVP», 2024−2030</i></li>
+            <li><i>Номер телефона: 89814303622</i></li>
+            <li><i>Почта: analick20045@gmail.com</i></li>
         </ul>
     </footer>
     <hr>

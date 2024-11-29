@@ -502,3 +502,7 @@ footer {
 .section__infoCompany img {
     margin: 50px auto 0 auto;
 }
+
+.footer__links {
+    display: flex;
+}
