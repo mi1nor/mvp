@@ -239,7 +239,7 @@ footer {
 }
 
 .custom-hr {
-    margin-top: 500px;
+    margin-top: 300px;
 }
 
 /* // */
@@ -292,6 +292,7 @@ footer {
 
 .modal__label {
     margin-top: 10px;
+    margin-bottom: 5px;
 }
 
 .modal__input,
