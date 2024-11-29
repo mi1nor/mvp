@@ -474,3 +474,31 @@ footer {
 .main-text p {
     margin-bottom: 150px;
 }
+
+/* // */
+
+.section__apartaments h2 {
+    font-size: 48px;
+    font-weight: 700;
+}
+
+.section__infoCompany {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.section__infoCompany .infoCompany__title {
+    font-size: 48px;
+    font-weight: 700;    
+}
+
+.section__infoCompany .infoCompany__text {
+    font-size: 26px;
+    font-weight: 300;
+    line-height: 1.2;
+    padding: 0 25px;
+}
+
+.section__infoCompany img {
+    margin: 50px auto 0 auto;
+}
